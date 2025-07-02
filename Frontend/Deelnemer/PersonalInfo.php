@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'C:\xampp\htdocs\volkstuin_test\volkstuinen\Backend\DatabaseContext\Database.php';
+require_once 'C:\xampp\htdocs\volkstuin_finish\Backend\DatabaseContext\Database.php';
 
 $conn = Database::GetConnection();
 
