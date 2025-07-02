@@ -76,12 +76,12 @@ try {
         </a>
         <a href="../../Frontend/Admin/GebruikerInfo.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+                <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
             </div>
         </a>
         <a href="../../Frontend/Admin/aanvragen_beheer.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
+                <img src="../Gedeeld/pictures/aanvraagstatus.png" alt="settings">
             </div>
         </a>
         <a href="../../Frontend/Admin/Pending_changes.php">
