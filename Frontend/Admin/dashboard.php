@@ -30,6 +30,8 @@ $role = $_SESSION['user_type'] ?? null; // Avoid undefined index warning
 // Get PDO connection
 $conn = Database::GetConnection();
 
+//eated spaghet
+
 // Corrected query - no join needed
 $sql = "SELECT Email, Usertype, Name FROM users WHERE id = :user_id";
 
@@ -60,13 +62,28 @@ $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
     <div class="sidebar">
     <img src="../../Frontend/Gedeeld/pictures/logo-volkstuinverenigingsittard.png" alt="Logo">
     <div class="Icoontjes">
-
+    
         <a href="dashboard.php">
             <div class="icon1">
                 <img src="../Gedeeld/pictures/HomeMenuButton.svg" alt="huisknop">
             </div>
         </a>
         <a href="../../Frontend/Admin/GebruikerInfo.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+            </div>
+        </a>
+        <a href="../../Frontend/admin/aanvragen_beheer.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
+            </div>
+        </a>
+        <a href="../../Frontend/admin/Pending_changes.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+            </div>
+        </a>
+        <a href="../../Frontend/admin/wachtrij_beheer.php">
             <div class="icon2">
                 <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
             </div>
@@ -78,7 +95,7 @@ $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
             </div>
         </a>
     </div>
-
+    
   </div>
     
     <div class="header">VOLKSTUIN VERENIGING SITTARD</div>
