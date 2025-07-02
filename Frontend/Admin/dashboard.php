@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '..\..\Backend\DatabaseContext\Database.php';
+include '../../Backend/DatabaseContext/Database.php';
 
 if (empty($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -8,39 +8,45 @@ if (empty($_SESSION['user_id'])) {
 }
 
 try {
-    $pdo = Database::GetConnection();
+    $conn = Database::GetConnection();
 
-    $stmt = $pdo->prepare("SELECT UserType FROM users WHERE Id = ?");
+    $stmt = $conn->prepare("SELECT UserType FROM users WHERE Id = ?");
     $stmt->execute([ (int)$_SESSION['user_id'] ]);
     $userType = $stmt->fetchColumn();
 
-    if (!$userType || !in_array((int)$userType, [4])) {
+    $userTypeMap = [
+        1 => 'deelnemer',
+        4 => 'admin',
+        // andere types
+    ];
+
+    if (!$userType || !array_key_exists((int)$userType, $userTypeMap)) {
         header("Location: login.php");
         exit();
     }
+
+    if (!in_array((int)$userType, [4,1])) { // alleen admin en deelnemer toegestaan
+        header("Location: login.php");
+        exit();
+    }
+
+    $role = $userTypeMap[(int)$userType];
+    $_SESSION['user_type'] = $role;
+
+    $user_id = $_SESSION['user_id'];
+
+    $sql = "SELECT Email, Usertype, Name FROM users WHERE id = :user_id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['user_id' => $user_id]);
+    $user = $stmt->fetch();
+
+    $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
+
 } catch (Exception $e) {
-    // Optional: log error $e->getMessage()
+    // Optioneel loggen: error_log($e->getMessage());
     header("Location: login.php");
     exit();
 }
-
-$user_id = $_SESSION['user_id'];
-$role = $_SESSION['user_type'] ?? null; // Avoid undefined index warning
-
-// Get PDO connection
-$conn = Database::GetConnection();
-
-//eated spaghet
-
-// Corrected query - no join needed
-$sql = "SELECT Email, Usertype, Name FROM users WHERE id = :user_id";
-
-$stmt = $conn->prepare($sql);
-$stmt->execute(['user_id' => $user_id]);
-$user = $stmt->fetch();
-
-// Fallback to email if naam is not set
-$naam = htmlspecialchars($user['Name'] ?? $user['Email']);
 ?>
 
 
@@ -73,17 +79,17 @@ $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
                 <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
             </div>
         </a>
-        <a href="../../Frontend/admin/aanvragen_beheer.php">
+        <a href="../../Frontend/Admin/aanvragen_beheer.php">
             <div class="icon2">
                 <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
             </div>
         </a>
-        <a href="../../Frontend/admin/Pending_changes.php">
+        <a href="../../Frontend/Admin/Pending_changes.php">
             <div class="icon2">
                 <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
             </div>
         </a>
-        <a href="../../Frontend/admin/wachtrij_beheer.php">
+        <a href="../../Frontend/Admin/wachtrij_beheer.php">
             <div class="icon2">
                 <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
             </div>
