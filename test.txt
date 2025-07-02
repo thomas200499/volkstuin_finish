@@ -1,0 +1,33 @@
+inloggen voor deelnemer bestuurder en beheerder werkt. X
+persoonsgegevens van users is nog niet beschikbaar.
+uitloggen werkt. X
+knoppen in dashboard zijn nog niet functioneel X
+formulier aanvraag_parceel word niet goed afgewerkt.
+aanvraag compleet bevestigings mail werkt nog niet.
+
+beheerder kan niet klikken op de opties kosten en grond
+beheerder krijgt geen persoonlijke gegevens te zien
+beheerder kan wel manoevreren tussen de schermopties
+beheerder kan wel op knoppen klikken en doorgeleid worden
+beheerder krijgt wel te zien dat die op beheerder pagina zit
+beheerder kan correct uitloggen
+beheerder kan nieuwe account registreren en inloggen ermee
+
+Bestuurder kan niet klikken op de opties kosten en grond
+Bestuurder krijgt geen persoonlijke gegevens te zien
+Bestuurder kan wel manoevreren tussen de schermopties
+Bestuurder kan wel op knoppen klikken en doorgeleid worden
+Bestuurder krijgt wel te zien dat die op Bestuurder pagina zit
+Bestuurder kan correct uitloggen
+Bestuurder kan nieuwe account registreren en inloggen ermee
+
+Deelnemer kan niet klikken op de opties kosten en grond
+Deelnemer krijgt geen eigen persoonlijke gegevens te zien
+Deelnemer kan wel manoevreren tussen de schermopties
+Deelnemer kan wel op knoppen klikken en doorgeleid worden x
+Deelnemer krijgt wel te zien dat die op Deelnemer pagina zit x
+Deelnemer kan correct uitloggen x
+Deelnemer kan nieuwe account registreren en inloggen ermee
+
+
+admin loguit werkt niet (er is geen admin pagina)
