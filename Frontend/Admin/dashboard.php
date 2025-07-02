@@ -105,7 +105,7 @@ try {
   </div>
     
     <div class="header">VOLKSTUIN VERENIGING SITTARD</div>
-    <div class="container">
+    <div class="main-container">
         <div class="menu">
             <h4 style="color: #fff; text-align:center;">Menu</h4>
             <?php if ($role == 'admin') { ?>
@@ -123,7 +123,7 @@ try {
         <div class="content">
             <h2>Welkom terug, <?php echo $naam; ?> 👋</h2>
             <p>Je bent ingelogd als: <strong><?php echo ucfirst($role); ?></strong></p>
-            <p>Selecteer een menuoptie aan de linkerkant om verder te gaan.</p>
+            
 
             <?php if (in_array($role, ['admin'])) { ?>
                 <a href="mijn_gebruikersgegevens.php" class="btn btn-warning mt-3">

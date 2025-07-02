@@ -63,6 +63,13 @@ body {
 .main-container {
   margin-left: 70px;
   padding: 20px;
+  margin-top: 115px;
+  .main-container {
+  margin-left: 80px;
+   /* To avoid hiding behind fixed header */
+  padding: 20px;
+}
+
 }
 
 
