@@ -73,6 +73,21 @@ $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
                 <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
             </div>
         </a>
+        <a href="../../Frontend/Admin/aanvragen_beheer.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
+            </div>
+        </a>
+        <a href="../../Frontend/Admin/Pending_changes.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+            </div>
+        </a>
+        <a href="../../Frontend/Admin/wachtrij_beheer.php">
+            <div class="icon2">
+                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+            </div>
+        </a>
         <a href="../../Backend/logout.php">
             <div class="icon3">
                 
