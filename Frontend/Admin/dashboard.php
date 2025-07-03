@@ -106,20 +106,7 @@ try {
     
     <div class="header">VOLKSTUIN VERENIGING SITTARD</div>
     <div class="main-container">
-        <div class="menu">
-            <h4 style="color: #fff; text-align:center;">Menu</h4>
-            <?php if ($role == 'admin') { ?>
-                <a href="aanvragenbeheer.php"><i class="fas fa-file-alt"></i> Aanvragenbeheer</a>
-                <a href="ledenbeheer.php"><i class="fas fa-users"></i> Ledenbeheer</a>
-                <a href="pending_wijzigingen_beheer.php"><i class="fas fa-user-edit"></i> Beheer Wijzigingen</a>
-                <a href="mededelingen_beheer.php"><i class="fas fa-bullhorn"></i> Mededeling Toevoegen</a>
-            <?php } ?><?php if ($role == 'deelnemer') { ?>
-                <a href="aanvragen.php"><i class="fas fa-plus-circle"></i> Aanvraag Volkstuin</a>
-                <a href="persoonsgegevens.php"><i class="fas fa-user"></i> Mijn Persoonsgegevens</a>
-                <a href="dashboard.php"><i class="fas fa-info-circle"></i> Mijn Aanvraag Status</a>
-            <?php } ?>
-
-        </div>
+        
         <div class="content">
             <h2>Welkom terug, <?php echo $naam; ?> 👋</h2>
             <p>Je bent ingelogd als: <strong><?php echo ucfirst($role); ?></strong></p>

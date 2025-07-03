@@ -64,8 +64,6 @@ if ($_SESSION['user_type'] === 'admin' && isset($_GET['id'], $_GET['actie'])) {
             ->execute([':id' => $id]);
     }
 
-    header("Location: pending_wijzigingen_beheer.php");
-    exit();
 }
 
 // Ophalen pending wijzigingen
