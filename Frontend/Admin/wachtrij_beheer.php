@@ -55,7 +55,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="Icoontjes">
         <a href="dashboard.php">
             <div class="icon1">
-                <img src="../Gedeeld/pictures/HomeMenuButton.svg" alt="huisknop">
+                <img src="../Gedeeld/pictures/huis.png" alt="huisknop">
             </div>
         </a>
         <a href="../../Frontend/Admin/GebruikerInfo.php">
@@ -81,7 +81,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="../../Backend/logout.php">
             <div class="icon3">
                 
-                <img src="../Gedeeld/pictures/ExitMenuButton.svg" alt="uitloggen">
+                <img src="../Gedeeld/pictures/uitloggen.png" alt="uitloggen">
             </div>
         </a>
     </div>
