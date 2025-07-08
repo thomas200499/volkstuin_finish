@@ -48,7 +48,7 @@ if ($_SESSION['user_type'] === 'admin' && isset($_GET['id'], $_GET['actie'])) {
             $pdo->prepare("UPDATE users SET email = :email WHERE id = :id")
                 ->execute([':email' => $nieuw_email, ':id' => $user_id]);
 
-            $pdo->prepare("UPDATE leden SET naam = :naam, adres = :adres, telefoon = :telefoon WHERE user_id = :user_id LIMIT 1")
+            $pdo->prepare("UPDATE users SET name = :naam, Address = :adres, PhoneNumber = :telefoon WHERE Id = :user_id LIMIT 1")
                 ->execute([
                     ':naam' => $nieuw_naam,
                     ':adres' => $nieuw_adres,
@@ -56,11 +56,11 @@ if ($_SESSION['user_type'] === 'admin' && isset($_GET['id'], $_GET['actie'])) {
                     ':user_id' => $user_id
                 ]);
 
-            $pdo->prepare("UPDATE aanvragen_wijzigingen SET status = 'goedgekeurd' WHERE id = :id")
+            $pdo->prepare("UPDATE pending_changes SET status = 'goedgekeurd' WHERE id = :id")
                 ->execute([':id' => $id]);
         }
     } elseif ($actie === 'afwijzen') {
-        $pdo->prepare("UPDATE aanvragen_wijzigingen SET status = 'afgewezen' WHERE id = :id")
+        $pdo->prepare("UPDATE pending_changes SET status = 'afgewezen' WHERE id = :id")
             ->execute([':id' => $id]);
     }
 
