@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 <body>
 
   <!-- Koptekst -->
-  <div class="header">VOLKSTUIN VERENING SITTARD</div>
+  <div class="header">VOLKSTUIN VERENIGING SITTARD</div>
 
   <!-- Zijbalk -->
   <div class="sidebar">

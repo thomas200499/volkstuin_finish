@@ -49,7 +49,7 @@ $usersResult = $users->findAllUsers();
   </div>
 
 <div class="header">
-    VOLKSTUIN VERENING SITTARD
+    VOLKSTUIN VERENIGING SITTARD
 </div>
 <div class="main-container">
 

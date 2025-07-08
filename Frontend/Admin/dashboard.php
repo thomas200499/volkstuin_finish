@@ -43,13 +43,11 @@ try {
     $naam = htmlspecialchars($user['Name'] ?? $user['Email']);
 
 } catch (Exception $e) {
-    // Optioneel loggen: error_log($e->getMessage());
+    error_log($e->getMessage());
     header("Location: login.php");
     exit();
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="nl">
@@ -79,7 +77,7 @@ try {
                 <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="settings">
             </div>
         </a>
-        <a href="../../Frontend/Admin/aanvragen_beheer.php">
+        <a href="../../Frontend/Admin/aanvraag_beheer.php">
             <div class="icon2">
                 <img src="../Gedeeld/pictures/aanvraagstatus.png" alt="settings">
             </div>
@@ -113,7 +111,7 @@ try {
             
 
             <?php if (in_array($role, ['admin'])) { ?>
-                <a href="mijn_gebruikersgegevens.php" class="btn btn-warning mt-3">
+                <a href="GebruikerInfo.php" class="btn btn-warning mt-3">
                     <i class="fas fa-user-cog"></i> Mijn Gegevens Aanpassen
                 </a>
             <?php } ?>

@@ -55,7 +55,7 @@ if ($usertype == 'admin' && isset($_GET['id']) && isset($_GET['actie'])) {
         }
     }
 
-    header("Location: aanvragenbeheer.php");
+    header("Location: aanvraag_beheer.php");
     exit();
 }
 

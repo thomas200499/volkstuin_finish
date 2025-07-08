@@ -60,7 +60,7 @@ if (isset($error)) {
 </div>
 
 <div class="header">
-        VOLKSTUIN VERENING SITTARD
+        VOLKSTUIN VERENIGING SITTARD
 </div>
 
 
