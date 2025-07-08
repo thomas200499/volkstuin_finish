@@ -43,16 +43,16 @@ $result = $conn->query($sql);
       </a>
       <a href="../../Frontend/Deelnemer/PersonalInfo.php">
         <div class="icon2">
-          <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="Gebruikersinstellingen">
+          <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="Gebruikersinstellingen">
         </div>
       </a>
       <a href="../../Frontend/Deelnemer/Aanvraag_status.php">
         <div class="icon2">
-          <img src="../Gedeeld/pictures/mail_logo.png" alt="Aanvraag status">
+          <img src="../Gedeeld/pictures/aanvraagstatus.png" alt="Aanvraag status">
         </div>
       </a> <a href="../../Frontend/Deelnemer/aanvragen.php">
         <div class="icon2">
-          <img src="../Gedeeld/pictures/mail_logo.png" alt="Aanvraag status">
+          <img src="../Gedeeld/pictures/aanvraagstatus_deelnemer.png" alt="Aanvraag status">
         </div>
       </a>
       <a href="../../Backend/logout.php">

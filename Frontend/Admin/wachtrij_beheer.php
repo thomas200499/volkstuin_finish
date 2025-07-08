@@ -70,12 +70,12 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </a>
         <a href="../../Frontend/admin/Pending_changes.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+                <img src="../Gedeeld/pictures/pendingChanges.png" alt="settings">
             </div>
         </a>
         <a href="../../Frontend/admin/wachtrij_beheer.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+                <img src="../Gedeeld/pictures/wachtrij_logo.png" alt="settings">
             </div>
         </a>
         <a href="../../Backend/logout.php">

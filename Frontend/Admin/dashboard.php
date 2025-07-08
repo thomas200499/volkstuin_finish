@@ -84,7 +84,7 @@ try {
         </a>
         <a href="../../Frontend/Admin/Pending_changes.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/pendingChanges.php" alt="settings">
+                <img src="../Gedeeld/pictures/pendingChanges.png" alt="settings">
             </div>
         </a>
         <a href="../../Frontend/Admin/wachtrij_beheer.php">
