@@ -20,17 +20,17 @@ checkSession($allowedUserTypes = [2]);
 
           <a href="dashboard.php">
               <div class="icon1">
-                  <img src="../Gedeeld/pictures/HomeMenuButton.svg" alt="huisknop">
+                  <img src="../Gedeeld/pictures/huis.png" alt="huisknop">
               </div>
           </a>
             <a href="../../Frontend/Beheerder/GebruikerInfo.php">
                 <div class="icon2">
-                    <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="Gebruiker Info">
+                    <img src="../Gedeeld/pictures/persoonsgegevens.png" alt="Gebruiker Info">
                 </div>  
             </a>
           <a href="../../Backend/logout.php">
               <div class="icon2">
-                  <img src="../Gedeeld/pictures/ExitMenuButton.svg" alt="Uitloggen">
+                  <img src="../Gedeeld/pictures/uitloggen.png" alt="Uitloggen">
               </div>
           </a>
       </div>

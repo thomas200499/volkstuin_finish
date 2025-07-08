@@ -30,7 +30,7 @@ $usersResult = $users->findAllUsers();
 
     <a href="dashboard.php">
         <div class="icon1">
-            <img src="../Gedeeld/pictures/HomeMenuButton.svg" alt="huisknop">
+            <img src="../Gedeeld/pictures/huis.png" alt="huisknop">
         </div>
     </a>
     <a href="../../Frontend/Beheerder/GebruikerInfo.php">
@@ -40,7 +40,7 @@ $usersResult = $users->findAllUsers();
     </a>
     <a href="../../Backend/logout.php">
         <div class="icon2">
-            <img src="../Gedeeld/pictures/ExitMenuButton.svg" alt="Uitloggen">
+            <img src="../Gedeeld/pictures/uitloggen.png" alt="Uitloggen">
         </div>
     </a>
     </div>

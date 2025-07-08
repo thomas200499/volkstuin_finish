@@ -38,7 +38,7 @@ $result = $conn->query($sql);
     <div class="Icoontjes">
       <a href="dashboard.php">
         <div class="icon1">
-          <img src="../Gedeeld/pictures/HomeMenuButton.svg" alt="Dashboard">
+          <img src="../Gedeeld/pictures/huis.png" alt="Dashboard">
         </div>
       </a>
       <a href="../../Frontend/Deelnemer/PersonalInfo.php">
@@ -57,7 +57,7 @@ $result = $conn->query($sql);
       </a>
       <a href="../../Backend/logout.php">
         <div class="icon3">
-          <img src="../Gedeeld/pictures/ExitMenuButton.svg" alt="Uitloggen">
+          <img src="../Gedeeld/pictures/uitloggen.png" alt="Uitloggen">
         </div>
       </a>
     </div>
