@@ -84,12 +84,12 @@ try {
         </a>
         <a href="../../Frontend/Admin/Pending_changes.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+                <img src="../Gedeeld/pictures/pendingChanges.php" alt="settings">
             </div>
         </a>
         <a href="../../Frontend/Admin/wachtrij_beheer.php">
             <div class="icon2">
-                <img src="../Gedeeld/pictures/UserMenuButton.svg" alt="settings">
+                <img src="../Gedeeld/pictures/wachtrij_logo.png" alt="settings">
             </div>
         </a>
         <a href="../../Backend/logout.php">
